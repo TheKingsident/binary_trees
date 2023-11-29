@@ -2,7 +2,7 @@
 
 /**
  * binary_tree_node - Creates a binary tree node
- * 
+ *
  * @parent: pointer to the node it will fall under
  * @value: the value to be assigned to the new node
  * Return: Address of the new node
