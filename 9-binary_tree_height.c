@@ -26,18 +26,7 @@ size_t binary_tree_height(const binary_tree_t *tree)
 		right_height =  binary_tree_height(tree->right) + 1;
 	}
 
-	return (max(left_height, right_height));
+	return ((left_height > right_height) ? left_height : right_height);
 
-}
-
-/**
- * max - compares two values
- * @a: first value to compare
- * @b: second value to compare
- * Return: the max
-*/
-size_t max(size_t a, size_t b)
-{
-	return ((a > b) ? a : b);
 }
 
